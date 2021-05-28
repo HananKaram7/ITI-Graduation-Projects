@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Arimo|Viga&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:  'Arimo', sans-serif;
+}
+ :root{
+       --white: #ffffff;
+       --light-green: #1ec2ad;
+       --blue: #205cfa;
+       --red: #e8465a;
+       --dark-red: #a83341;
+       --gray: #adabaa;
+       --black: #172422;
+       --dark-gray:#ddd;
+       --lighter-gray:#f4f4f4;
+     }
+#cover2{
+
+  max-width: 100%;
+  display: block;
+  background-image: url(../images/work.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  border-radius: 3px;
+  z-index: -1;
+}
+.slogan2{
+  position: absolute;
+  top:40%;
+  left:27%;
+  max-width: 80%;
+  font-size:60px;
+  color:var(--white);
+  font-weight:500;
+  text-align: center;
+  z-index: 0;
+  font-family: 'viga', sans-serif;
+}
+.info {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 60vh;
+}
+.info>div{
+  margin: 15px 10px;
+ box-shadow: var(--shadow);
+ height: 80%;
+ width: 98%;
+ background-position: center;
+ background-size: cover;
+ backdrop-filter: grayscale(100%);
+ text-align: center;
+}
+.content{
+display: inline-block;
+width: 90%;
+margin-top: 12%;
+font-family: 'Arimo';
+}
+.inbrief{
+ background: url(../images/wsh1.png);
+}
+.deep-dive{
+ background: url(../images/wsh2.png);
+}
+.journey{
+  background: url(../images/wrk3.JPG);
+}
+.info .inbrief h1 {
+ margin-top: 0;
+ color: white;
+ font-size: 35px;
+ background-color: var(--blue);
+ width: 100%;
+ padding: 10px 0 10px 0;
+ font-family: 'Arimo';
+}
+.info .deep-dive h1 {
+ margin-top: 0;
+ color: white;
+ font-size: 35px;
+ background-color: var(--red);
+ padding: 10px 0 10px 0;
+ font-family: 'Arimo';
+}
+.info .journey h1 {
+ margin-top: 0;
+ color: white;
+ font-size: 35px;
+ background-color: #1ec2ad;
+ padding: 10px 0 10px 0;
+ font-family: 'Arimo';
+}
+.info p{
+ width: 100%;
+ margin: auto;
+ color: white;
+ font-size: 17px;
+ font-family: 'Arimo';
+}
+.speakers-area{
+  margin-top: 50px;
+}
+@media(max-width:1100px){
+  #cover2 .slogan2{
+    top: 50%;
+    filter:blur(0px);
+    left:25%;
+    max-width: 70%;
+    font-size: 40px;
+  }
+  .speakers-boxes{
+  grid-gap: 10px;
+  }
+}
+@media(max-width:900px){
+  #cover2 .slogan2{
+    top: 50%;
+    filter:blur(0px);
+    left:20%;
+    max-width: 70%;
+    font-size: 40px;
+  }
+  .speakers-boxes{
+  grid-gap: 10px;
+  }
+}
+@media(max-width:600px){
+  #cover2 .slogan2{
+    left:15%;
+    top:70%;
+    width: 90%;
+    font-size: 30px;
+  }
+  .content{
+    padding-bottom: 30px;
+  }
+  .speakers-area{
+    margin-top: 70px;
+  }
+}
+@media(max-width:850px){
+  .info{
+    display: grid;
+    grid-template-columns: 1fr;
+      height: 100vh;
+  }
+  .speakers-boxes{
+  grid-gap: 10px;
+  }
+  .content{
+    width: 90%;
+    margin-top: 10px;
+  }
+  .info p{
+        font-size: 16px;
+  }
+}
